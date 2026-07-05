@@ -3,7 +3,7 @@ from graph.schemas.schema_searchQuery import SearchQuery
 from langchain_tavily import TavilySearch
 from config.model import get_llm
 # import search_instructions
-from graph.search import search_instructions
+from graph.search.search_instructions import search_instructions
 
 def search_web(state: InterviewState):
     

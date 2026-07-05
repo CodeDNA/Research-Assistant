@@ -2,10 +2,10 @@ from langgraph.graph import StateGraph, START, END
 from graph.schemas.state_ResearchGraphState import ResearchGraphState
 from graph.analysts.create_analysts import create_analysts
 from graph.humanFeedback.human_feedback import human_feedback
-from graph.write import write_report
-from graph.write import write_introduction
-from graph.write import write_conclusion
-from graph.write import finalize_report
+from graph.write.write_report import write_report
+from graph.write.write_introduction import write_introduction
+from graph.write.write_conclusion import write_conclusion
+from graph.write.finalize_report import finalize_report
 from graph.Interviews.initiate_all_interviews import initiate_all_interviews
 from graph.graphBuilder.interview_graph import interview_graph
 
