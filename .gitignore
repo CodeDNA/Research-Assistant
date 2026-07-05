@@ -1,2 +1,7 @@
 .env
+ra-env/.langgraph_api/
 ra-env/
+__pycache__/
+*.pyc
+*.pyo
+.langgraph_api/
