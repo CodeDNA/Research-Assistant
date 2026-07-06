@@ -5,3 +5,5 @@ __pycache__/
 *.pyc
 *.pyo
 .langgraph_api/
+Backup Allinone/
+.DS_Store

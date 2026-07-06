@@ -5,9 +5,6 @@ from langchain_openai import ChatOpenAI
 from langchain_google_genai import ChatGoogleGenerativeAI
 
 load_dotenv()
-DEFAULT_PROVIDER = os.getenv("DEFAULT_LLM_PROVIDER", "openai").lower()
-DEFAULT_OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
-
 
 # # ---- Defaults (overridable via .env or function args) ----
 DEFAULT_PROVIDER = os.getenv("DEFAULT_LLM_PROVIDER", "openai").lower()
@@ -15,7 +12,7 @@ OPENAI_MODEL = os.getenv("DEFAULT_OPENAI_MODEL", "gpt-4o-mini")
 
 
 
-def get_llm(provider: str = DEFAULT_PROVIDER, temperature: float = 0):
+def get_llm(provider: str = DEFAULT_PROVIDER, temperature: float = 0.5):
     provider = provider.lower()
     
     if provider == "openai":

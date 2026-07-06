@@ -1,5 +1,5 @@
 from graph.schemas.state_InterviewState import InterviewState
-from graph.generateAnswer import answer_instructions
+from graph.generateAnswer.answer_instructions import answer_instructions
 from langchain.messages import SystemMessage
 from config.model import get_llm
 

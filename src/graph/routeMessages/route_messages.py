@@ -24,4 +24,4 @@ def route_messages(state: InterviewState,
     
     if "Thank you so much for your help" in last_question.content:
         return 'save_interview'
-    return "ask_question"
+    return "generate_question"
