@@ -2,7 +2,6 @@ langchain
 langgraph
 langgraph-prebuilt
 langgraph-sdk
-# langgraph-checkpoint-sqlite
 langsmith>=0.7.31
 langchain-community
 langchain-core>=1.2.28
